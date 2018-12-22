@@ -1,4 +1,4 @@
-# Readme.md for xetrapal
+# How to install Xetrapal
 
 ## first clone the repository to your system :
 ```

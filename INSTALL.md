@@ -2,7 +2,7 @@
 
 ## first clone the repository to your system :
 ```
-git clone https://github.com/anandabhairav/xetrapal
+git clone https://github.com/hackergram/xetrapal
 ```
 
 ## install the dependencies:

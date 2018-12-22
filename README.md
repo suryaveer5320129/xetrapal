@@ -1,31 +1,19 @@
-# Readme.md for xetrapal
+# xetrapal (क्षेत्रपाल)
+हिन्दी एवं अन्य भारतीय भाशाओं में इंटरनेट से सामग्री को साझा करने एवं स्वतंत्र रूप से विश्लेषण करने के उपकरण 
 
-## first clone the repository to your system :
-```
-git clone https://github.com/anandabhairav/xetrapal
-```
+Orchestration and automation framework for web based task work, data analysis and mining, particularly in Indic languages
 
-## install the dependencies:
-```
-cd xetrapal/
-sudo apt install build-essential python python-dev
-sudo -H pip install -r requirements.txt
-sudo -H pip install configparser
-sudo -H pip install oauth2client
-sudo -H pip uninstall telegram
-sudo -H pip install -U python-telegram-bot
+## Components
 
-```
-[Had to uninstall teleram first, look like this is related to](https://github.com/Tkd-Alex/Telegram-InstaPy-Scheduling/issues/13)
+### Jeeva
 
-## create the symbolic link of the file in /opt directory:
-```
-sudo ln -s /home/<username>/xetrapal /opt/xetrapal
+Controls the basic functions - setup, read config, set up logging and error handling. 
 
-```
-## In ipython:
-```
-import sys
-sys.path.append("/opt/xetrapal")
-import xetrapal
-```
+### Astra
+
+Objects that are usually from interfaces to other services. For example, a Selenium browser handle is an astra, as is a telegram chat bot controller object. 
+
+### Karma
+
+Functions carried out by the Jeeva using an Astra. Can be simple functions or complex workflows. 
+
